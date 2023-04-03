@@ -53,3 +53,14 @@ El juego consiste en escribir el mayor número de palabras posible en un minuto.
    - Pone el **buffer** vacío para que volvamos a escribir en el input la nueva palabra.
 4. Un `useEffect` que nos resta el tiempo hasta llegar a 0.
 5. El componente retorna varios headers y un formulario.
+
+## Adivina el Pokemon
+
+El juego consiste en que sale la sombra de un pokemon y hay que adivinarlo.
+
+### Cómo funciona la lógica de Adivina el Pokemon(por orden de código)
+
+1. Disponemos de un array con los pokemons que vamos a tener para que el jugador adivine.
+2. Un estado **hasWon** para comprobar si el jugador ha acertado el pokemon.
+3. Al hacer submit del <form> comprobamos si el valor del input es igual al pokemon que hay que adivinar.
+   Y muestra un `alert()` con el mensaje correspondiente.

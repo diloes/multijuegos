@@ -36,15 +36,17 @@ img {
 }
 
 body {
-  margin: auto;
   display: flex;
   place-items: center;
-  max-width: 800px;
   min-height: 100vh;
+  /* background-image: url('/public/fondo.png');
+  background-repeat: round; */
 }
 
 #root {
   width: 100%;
+  max-width: 800px;
+  margin: auto;
 }
 
 main {

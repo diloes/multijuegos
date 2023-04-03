@@ -78,10 +78,7 @@ function Memotest() {
             {selected.includes(image) || guessed.includes(image) ? (
               <img src={url} alt="icon" />
             ) : (
-              <img
-                src="https://icongr.am/clarity/dot-circle.svg?size=128&color=currentColor"
-                alt="icon"
-              />
+              <img src="https://icongr.am/clarity/dot-circle.svg?size=128&color=currentColor" alt="icon" />
             )}
           </li>
         )
