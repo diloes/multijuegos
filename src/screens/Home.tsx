@@ -1,29 +1,21 @@
+import Card from '../components/Card'
 import styles from './Home.module.css'
 
 const Home = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.enlaces}>
-        <div className={styles.box}>
-          <a href="/memotest">
-            {/* <img src="/memotest.webp" /> */}
-            <h3>Memotest</h3>
-          </a>
-        </div>
+    <div style={{ display: 'grid', justifyContent: 'center' }}>
+      <h3 className={styles.title}>¡Elige uno de los tres juegos y diviértete!</h3>
+      <div className={styles.container}>
+        <a href="/memotest" style={{ textDecoration: 'none' }}>
+          <Card gameName="Memotest" image="/memotest.webp" />
+        </a>
+        <a href="/wpm" style={{ textDecoration: 'none' }}>
+          <Card gameName="Mecanografía" image="/teclado.jpg" />
+        </a>
 
-        <div className={styles.box}>
-          <a href="/wpm">
-            {/* <img src="/teclado.jpg" /> */}
-            <h3>Palabras por Minuto</h3>
-          </a>
-        </div>
-
-        <div className={styles.box}>
-          <a href="pokemon">
-            {/* <img src="/pokemon.jpg" /> */}
-            <h3>Adivina el Pokemon</h3>
-          </a>
-        </div>
+        <a href="/pokemon" style={{ textDecoration: 'none' }}>
+          <Card gameName="Adivina Pokemon" image="/pokemon.jpg" />
+        </a>
       </div>
     </div>
   )

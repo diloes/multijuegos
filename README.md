@@ -1,6 +1,6 @@
 # Multijuegos - React
 
-Esta webapp consiste en una SPA con tres mini juegos:
+Esta webapp consiste en tres mini juegos:
 
 - Memotest(Juego de memoria).
 - WPM
